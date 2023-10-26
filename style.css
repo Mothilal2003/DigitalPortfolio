@@ -1,0 +1,249 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    width: 100%;
+}
+.navbar {
+    display: inline;
+}
+.navbar h3 {
+    font-size: 37px;
+    color: purple;
+    position: absolute;
+    background: linear-gradient(to right,rgb(255, 0, 234),rgb(0, 204, 255));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#name{
+    background: linear-gradient(to right,rgb(47, 0, 255),rgb(255, 0, 76));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+    animation: text 1s linear infinite;
+    transition: 2s;
+}
+@keyframes text{
+    50%{
+        opacity: 1;
+    }
+}
+
+.home {
+    height: 85vh;
+    width: 90%;
+    background: url(bg.jpg);
+    margin-top: 3%;
+    margin-left: 5%;
+    border-radius: 10px;
+    padding: 3%;
+}
+nav {
+    float: right;
+    position: relative;
+    display: flex;
+    margin-right: 10%;
+    margin-top: .2%;
+}
+nav a {
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 10%;
+    font-weight: bold;
+    color: black;
+}
+nav a:hover {
+    color: rgb(0, 60, 255);
+    -webkit-text-stroke:.6px black;
+}
+.main {
+    margin-top: 14%;
+    margin-left: 5%;
+}
+.main img {
+    float: right;
+    margin-top: -20%;
+    margin-right: 5%;
+    border-radius: 50%;
+    box-shadow: 0 0 15px purple, 0 0 25px 20px rgba(128, 0, 128, 0.411);
+    cursor: pointer;
+    transition: 2s;
+    animation: zoom 4s linear infinite;
+}
+
+@keyframes zoom{
+    50%{
+    transform: scale(1.1,1.1);
+    /* transform: rotateY(90deg); */
+    transition: 10s;
+    }
+}
+
+.main img:hover{
+}
+.main h1 span {
+    color: orangered;
+}
+.main h1,
+h2 {
+    margin-top: 1%;
+    
+}
+.main h2 {
+    margin-bottom: 4%;
+}
+.main a {
+    text-decoration: none;
+    border: 3px solid transparent;
+    color: rgb(0, 89, 255);
+    -webkit-text-stroke: .3px black;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 19px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgb(0, 128, 38), 0 0 15px 5px rgba(0, 128, 117, 0.411);
+    border-image: linear-gradient(to right,blue,red) 30;
+    transition: 2s;
+}
+a:hover{
+    color: black;
+    transition: 2s;
+    background: linear-gradient(to right,rgba(0, 0, 255, 0.603),rgba(255, 0, 0, 0.507));
+}
+
+#devp{
+    display: inline-block;
+    background-clip: text;
+    background: rgb(255, 0, 106);
+    -webkit-text-stroke: .4px yellow;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+a:nth-child(5) {
+    margin-left: 3%;
+}
+.about,
+.skills,
+.contact {
+    height: 85vh;
+    width: 90%;
+    background: url(bg.jpg);
+    margin-top: 3%;
+    margin-left: 5%;
+    border-radius: 10px;
+    padding: 3%;
+}
+.about h1,
+.skills h1,
+.contact h1 {
+    text-align: center;
+}
+.about-content {
+    float: right;
+}
+.about-content p {
+    margin-top: 8%;
+    font-size: 25px;
+    text-align: justify;
+    position: relative;
+    margin-left: 35%;
+}
+.about img {
+    box-shadow: 0 0 15px purple, 0 0 15px 5px rgba(128, 0, 128, 0.411);
+    border-radius: 10px;
+    margin-top: 7%;
+    position: absolute;
+}
+.skills h1 {
+    text-align: center;
+}
+.skill-content {
+    display: flex;
+}
+.hardskills,
+.softskills {
+    width: 40%;
+    padding: 5%;
+    margin-left: 10%;
+
+}
+.hardskills h2,
+.softskills h2 {
+    font-size: 32px;
+    color: blue;
+    margin-left: -30px;
+}
+.hardskills li,
+.softskills li {
+    font-size: 26px;
+    margin: 3%;
+    padding: 2%;
+}
+.contact-content {
+    margin-top: 6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form {
+    width: 40%;
+}
+.contact-content form input,
+textarea,
+button {
+    outline: none;
+    border: none;
+    margin: 2%;
+    padding: 3% 2%;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: inset 0 0 2px 1px black, 0 0 10px purple;
+}
+.contact-content form button {
+    width: 40%;
+    font-size: 23px;
+    padding: 1.7%;
+    margin-left: 30%;
+}
+footer {
+    text-align: center;
+    padding: 2%;
+}
+footer h1,
+h3 {
+    margin: 2%;
+}
+h1{
+    background: linear-gradient(to right,rgb(255, 0, 234),rgb(0, 204, 255));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* display: inline-block; */
+}
+.about h1{
+    text-decoration: underline;
+}
+.contact button{
+    border: 3px solid transparent;
+    border-image: linear-gradient(to right,rgb(255, 230, 0),blue) 30;
+    cursor: pointer;
+}
+.contact button:hover{
+    background:linear-gradient(to right,yellow,blue);
+    color: white;
+}
+#name{
+    transform: none;
+}
+
+@media only screen and (max-width:768) {
+    .about p{
+        margin-left: 50%;
+    }
+}
